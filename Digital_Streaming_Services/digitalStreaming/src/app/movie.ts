@@ -5,6 +5,8 @@ export interface Movie{
     releaseYear?: number;
     duration?: string;
     rating?: number;
+    reviews?: string[];
+    actors?: string[];
 }
 
 
@@ -16,7 +18,9 @@ export const movie = [
         movieDesc: "Dark Thriller",
         releaseYear: 2008,
         duration: "75 minutes",
-        rating: 5
+        rating: 5,
+        reviews: ["Good", "Bad"],
+        actors : ["Hugh", "David"]
 
 
     },
@@ -27,7 +31,9 @@ export const movie = [
         movieDesc: "Action",
         releaseYear: 2012,
         duration: "90 minutes",
-        rating: 3
+        rating: 3,
+        reviews: ["Good", "Bad"],
+        actors : ["Hugh", "David"]
 
 
     },
@@ -38,7 +44,9 @@ export const movie = [
         movieDesc: "Comedy",
         releaseYear: 2015,
         duration: "120 minutes",
-        rating: 4
+        rating: 4,
+        reviews: ["Good", "Good"],
+        actors : ["Clara", "David"]
 
 
     },
@@ -48,7 +56,9 @@ export const movie = [
         movieDesc: "Comedy",
         releaseYear: 2017,
         duration: "75 minutes",
-        rating: 3
+        rating: 3,
+        reviews: ["Good", "Average"],
+        actors : ["Jones", "CLint"]
 
 
     },
@@ -58,7 +68,9 @@ export const movie = [
         movieDesc: "Action",
         releaseYear: 2020,
         duration: "80 minutes",
-        rating: 5
+        rating: 5,
+        reviews: ["Average", "Average"],
+        actors : ["Kenzo", "Goliath"]
 
 
     }
