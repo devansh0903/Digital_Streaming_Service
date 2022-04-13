@@ -9,6 +9,8 @@ import { AddMovieComponent } from './add-movie/add-movie.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ReviewComponent } from './review/review.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import {HttpClientModule} from '@angular/common/http';
     ListMovieComponent,
     EditMovieComponent,
     AddMovieComponent,
-    MovieDetailsComponent
+    MovieDetailsComponent,
+    NavbarComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,
