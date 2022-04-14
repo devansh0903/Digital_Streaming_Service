@@ -9,11 +9,11 @@ import {Router} from '@angular/router';
 })
 export class AddMovieComponent implements OnInit {
   checkoutForm = this.formBuilder.group({
-    title: '',
-    movieDesc: '',
-    releaseYear: '',
-    duration: '',
-    rating: ''
+    title: ['', Validators.required],
+    movieDesc: ['',Validators.required],
+    releaseYear: ['',Validators.required,Validators.max(9999)],
+    duration: ['',Validators.required,Validators.min(0),Validators.max(999)],
+    rating: ['',Validators.required,Validators.max(5), Validators.min(0)]
   });
   constructor(private route: Router, private formBuilder: FormBuilder) { }
 

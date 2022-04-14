@@ -10,7 +10,7 @@ const routes: Routes = [{path: '', component: ListMovieComponent  , pathMatch: '
 {path: 'add-movie', component: AddMovieComponent},
 {path: 'edit-movie', component:EditMovieComponent},
 {path: 'movie/:movieId' , component: MovieDetailsComponent},
-];
+{path: 'detail-movie', component: MovieDetailsComponent}];
 
 @NgModule({
   imports: [CommonModule,RouterModule.forRoot(routes)],
